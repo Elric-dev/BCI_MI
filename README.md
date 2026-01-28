@@ -62,11 +62,11 @@ Key performance metrics achieved on benchmark datasets:
 If you use this work in your research, please cite:
 
 ```bibtex
-@mastersthesis{yourname2026bci,
-  title={Brain-Computer Interface for Motor Imagery Classification},
-  author={Your Name},
-  year={2026},
-  school={Your University},
+@mastersthesis{Mafla2026bci,
+  title={Benchmarking Brain-Computer Interface for Motor Imagery,
+  author={Mafla, Gustavo},
+  year={2025},
+  school={Università Degli Studi di Milano},
   type={Master's Thesis}
 }
 ```
