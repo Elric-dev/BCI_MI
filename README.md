@@ -48,68 +48,12 @@ Motor imagery-based BCIs have significant applications in assistive technologies
 
 Key performance metrics achieved on benchmark datasets:
 
-- **BCI Competition IV-2a**: Classification accuracy of XX.X% (specify your results)
-- **BCI Competition IV-2b**: Classification accuracy of XX.X% (specify your results)
-- **Cross-subject validation**: Demonstrated generalization capability across multiple subjects
-- **Computational efficiency**: Real-time classification with <XXms latency
+- **BCI Competition IV-2b**: Classification accuracy using Cohen's Kappa
+- FBCSP MutualInfo LDA CV :            kappa: 0.6481 & std: 0.1651
+- FBCSP noFeatureSelection LinSVM CV:  kappa: 0.6361 & std: 0.1533
+- FBCSP CNN LSTM CV:                   kappa: 0.6101 & std: 0.16
+- FT EEG MIG CNN CV:                   kappa: 0.5403 & std: 0.1451
 
-*(Note: Update with actual results from your thesis)*
-
----
-
-## 🛠️ Repository Structure
-
-```
-BCI_MI/
-├── data/                  # Dataset storage and preprocessing scripts
-├── src/                   # Source code for BCI pipeline
-│   ├── preprocessing/     # Signal preprocessing modules
-│   ├── features/          # Feature extraction algorithms
-│   ├── models/            # Classification models
-│   └── utils/             # Utility functions
-├── notebooks/             # Jupyter notebooks for analysis and visualization
-├── experiments/           # Experimental configurations and results
-├── docs/                  # Documentation and thesis PDF
-└── README.md             # This file
-```
-
-*(Note: Add directories as you populate the repository with your thesis code)*
-
----
-
-## 💻 Installation & Usage
-
-### Requirements
-```bash
-Python >= 3.8
-NumPy
-SciPy
-scikit-learn
-MNE-Python (for EEG processing)
-TensorFlow/PyTorch (for deep learning models)
-matplotlib, seaborn (for visualization)
-```
-
-### Setup
-```bash
-# Clone the repository
-git clone https://github.com/Elric-dev/BCI_MI.git
-cd BCI_MI
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Run preprocessing
-python src/preprocessing/preprocess.py --config configs/default.yaml
-
-# Train model
-python src/train.py --model cnn --dataset bcic_iv_2a
-
-# Evaluate
-python src/evaluate.py --model_path models/best_model.pth
-```
-
-*(Note: Update commands based on your actual implementation)*
 
 ---
 
@@ -126,10 +70,6 @@ If you use this work in your research, please cite:
   type={Master's Thesis}
 }
 ```
-
-**Related Publications:**
-- [Add any conference papers or journal articles related to this work]
-
 ---
 
 ## 🔗 Related Resources
@@ -145,9 +85,8 @@ If you use this work in your research, please cite:
 The complete thesis document (PDF) is available [here](docs/thesis.pdf) *(upload your thesis PDF to the repository)*.
 
 **Thesis Committee:**
-- Supervisor: [Name], [Institution]
-- Co-supervisor: [Name], [Institution]
-- Examiner: [Name], [Institution]
+- Supervisor: Giuseppe Boccignone, University of Milan
+- Co-supervisor: Raffaella Lanzarotti, University of Milan
 
 ---
 
@@ -159,17 +98,17 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 👤 Author
 
-**[Your Name]**
-- 🎓 Master's degree in [Your Field], [Your University]
-- 📧 Email: [your.email@domain.com]
-- 🔗 LinkedIn: [Your LinkedIn Profile]
+**Gustavo Mafla Roca**
+- 🎓 Master's degree in Human Centered Artificial Intelligence, University of Milan
+- 📧 Email: [gmaflarocal@gmail.com]
+- 🔗 LinkedIn: [https://www.linkedin.com/in/gustavo-mafla/]
 - 🐙 GitHub: [@Elric-dev](https://github.com/Elric-dev)
 
 ---
 
 ## 🙏 Acknowledgments
 
-I would like to thank my thesis supervisor [Name] for their guidance and support throughout this research. Special thanks to [Research Group/Lab Name] for providing computational resources and valuable feedback. This work was supported by [Funding Source, if applicable].
+I would like to thank my thesis supervisor Prof. Giuseppe Boccignone for his guidance and support throughout this research. Special thanks to PHUSE LAB Unimi for providing computational resources and valuable feedback. 
 
 ---
 
@@ -177,7 +116,7 @@ I would like to thank my thesis supervisor [Name] for their guidance and support
 
 For questions, collaborations, or further information about this research, please feel free to reach out:
 - Open an issue in this repository
-- Email: [your.email@domain.com]
+- Email me
 
 ---
 
